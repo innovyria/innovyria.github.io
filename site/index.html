@@ -8,6 +8,10 @@
   <title>Innovyria — open-source software from an autonomous development lifecycle</title>
   <meta name="description" content="Innovyria builds open-source software with an autonomous software development lifecycle: AI agents write, test, review and release the code; a person sets the goals and owns the result.">
   <link rel="canonical" href="https://innovyria.ai/">
+  <link rel="alternate" hreflang="en" href="https://innovyria.ai/">
+  <link rel="alternate" hreflang="de" href="https://innovyria.ai/de/">
+  <link rel="alternate" hreflang="x-default" href="https://innovyria.ai/">
+  <script src="/assets/lang.js"></script>
   <meta name="theme-color" content="#fafbfc" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0c1018" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -15,6 +19,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/assets/site.css">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_AT">
   <meta property="og:site_name" content="Innovyria">
   <meta property="og:url" content="https://innovyria.ai/">
   <meta property="og:title" content="Innovyria — software crafted by an autonomous development lifecycle">
@@ -42,6 +48,7 @@
         <a href="#software">Software</a>
         <a href="#install">Install</a>
         <a href="#news">News</a>
+        <a class="lang" href="/de/" hreflang="de" lang="de" data-set-lang="de" aria-label="Deutsche Version" title="Deutsche Version"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg>DE</a>
         <a class="gh" href="https://github.com/innovyria">
           <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
           GitHub
@@ -225,7 +232,7 @@
             <p>Open the <code>.flatpakref</code> in GNOME Software, or run:</p>
             <div class="cmd">
               <pre><code>flatpak install --user https://innovyria.github.io/flatpak/io.github._24icewolf42.markdown-editor.flatpakref</code></pre>
-              <button class="copy" type="button" aria-label="Copy command" hidden>
+              <button class="copy" type="button" aria-label="Copy command" data-copied-label="Copied" hidden>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>
               </button>
             </div>
@@ -236,7 +243,7 @@
             <p>New Innovyria apps then show up in GNOME Software on their own.</p>
             <div class="cmd">
               <pre><code>flatpak remote-add --user --if-not-exists innovyria https://innovyria.github.io/flatpak/innovyria.flatpakrepo</code></pre>
-              <button class="copy" type="button" aria-label="Copy command" hidden>
+              <button class="copy" type="button" aria-label="Copy command" data-copied-label="Copied" hidden>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>
               </button>
             </div>
@@ -276,7 +283,7 @@
         <a href="https://github.com/innovyria">GitHub</a>
         <a href="https://innovyria.github.io/flatpak/">Flatpak repository</a>
         <a href="https://github.com/innovyria/innovyria.github.io">Site source</a>
-        <a href="/legal/">Impressum &amp; Datenschutz</a>
+        <a href="/legal/">Legal notice &amp; privacy</a>
       </nav>
     </div>
   </footer>

@@ -13,6 +13,21 @@ Preview locally:
 python3 -m http.server --directory site 8000
 ```
 
+## Languages
+
+English is the default at `/`; German mirrors it under `/de/` (`/legal/` ↔ `/de/legal/`). Each page
+names its counterpart with `<link rel="alternate" hreflang>`, and
+[`site/assets/lang.js`](site/assets/lang.js), loaded in `<head>`, picks the language:
+
+- A choice made with the header switch (`EN`/`DE`) is stored in `localStorage` and wins on every visit.
+- Otherwise the English pages send browsers whose preferred language (`navigator.languages`) is German
+  to the German page. German pages never redirect on detection alone, so a shared `/de/` link stays
+  German.
+- Without JavaScript nothing redirects and the switch works as a plain link.
+
+A change to a page has to be made in both languages. The German legal notice is authoritative; the
+English one says so. The privacy section discloses the `localStorage` entry.
+
 ## Domain
 
 `innovyria.ai` is the custom domain of this repository's Pages site. Because this is the

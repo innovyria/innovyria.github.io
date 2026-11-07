@@ -120,9 +120,11 @@ p { margin: 0 0 1em; }
 .nav a:hover { color: var(--text); background: var(--bg-soft); }
 .nav .gh { display: inline-flex; align-items: center; gap: .4rem; color: var(--text); border: 1px solid var(--border); }
 .nav .gh svg { width: 18px; height: 18px; }
+.nav .lang { display: inline-flex; align-items: center; gap: .35rem; font-weight: 650; letter-spacing: .03em; }
+.nav .lang svg { width: 17px; height: 17px; }
 
 @media (max-width: 720px) {
-  .nav a:not(.gh) { display: none; }
+  .nav a:not(.gh):not(.lang) { display: none; }
 }
 
 /* ---- Buttons ---- */
@@ -316,3 +318,4 @@ section { padding: clamp(4rem, 9vw, 6.5rem) 0; }
 @media (max-width: 560px) { .legal dl { grid-template-columns: 1fr; gap: .1rem; } .legal dd { margin-bottom: .6rem; } }
 .legal .note { font-size: .92rem; font-style: italic; }
 .legal .updated { margin-top: 3.5rem; font-size: .88rem; color: var(--text-soft); }
+.note-lang { color: var(--text-soft); font-weight: 400; font-size: .9em; }
