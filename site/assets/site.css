@@ -287,3 +287,19 @@ section { padding: clamp(4rem, 9vw, 6.5rem) 0; }
 .notfound { min-height: 70vh; display: grid; place-items: center; text-align: center; }
 .notfound .code { margin: 0 0 .2em; font: 800 clamp(5rem, 16vw, 9rem)/1 var(--font); letter-spacing: -.05em; }
 .btn-row.center { justify-content: center; }
+
+/* ---- Legal ---- */
+
+.legal { padding: clamp(3rem, 7vw, 5rem) 0; }
+.legal .wrap { max-width: 46rem; }
+.legal article + article { margin-top: 4rem; padding-top: 3.5rem; border-top: 1px solid var(--border); }
+.legal h1 { font-size: clamp(2rem, 4.5vw, 2.8rem); }
+.legal h2 { font-size: 1.45rem; margin-top: 2.5rem; }
+.legal h3 { font-size: 1.05rem; margin: 1.75rem 0 .4rem; }
+.legal p, .legal dd { color: var(--text-soft); }
+.legal dl { display: grid; grid-template-columns: max-content 1fr; gap: .5rem 1.5rem; margin: 0; }
+.legal dt { font-weight: 620; }
+.legal dd { margin: 0; }
+@media (max-width: 560px) { .legal dl { grid-template-columns: 1fr; gap: .1rem; } .legal dd { margin-bottom: .6rem; } }
+.legal .note { font-size: .92rem; font-style: italic; }
+.legal .updated { margin-top: 3.5rem; font-size: .88rem; color: var(--text-soft); }
